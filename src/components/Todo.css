@@ -1,0 +1,184 @@
+.c-cb {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1;
+  display: block;
+  position: relative;
+  min-height: 22px;
+  padding-left: 30px;
+  clear: left;
+}
+.c-cb > label::before,
+.c-cb > input[type="checkbox"] {
+  box-sizing: border-box;
+  top: -2px;
+  left: -2px;
+  width: 22px;
+  height: 22px;
+}
+.c-cb > input[type="checkbox"] {
+  -webkit-font-smoothing: antialiased;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  opacity: 0;
+}
+.c-cb > label {
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 0px 10px 5px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.c-cb > label::before {
+  content: "";
+  position: absolute;
+  border: 2px solid currentcolor;
+  background: transparent;
+}
+.c-cb > label::after {
+  box-sizing: content-box;
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 1px;
+  width: 13.5px;
+  height: 5px;
+  color: #118800;
+  transform: rotate(-45deg);
+  border: solid;
+  border-width: 0 0 4px 4px;
+  border-top-color: transparent;
+  opacity: 0;
+  background: transparent;
+}
+.c-cb > input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.font {
+  font-size: large;
+  resize: none;
+}
+
+.small {
+  font-size: medium;
+}
+
+.red {
+  color: red;
+  opacity: 0.9;
+}
+
+.red:hover {
+  opacity: 1;
+}
+
+.black:hover {
+  opacity: 0.8;
+}
+.green {
+  opacity: 1;
+}
+.green:hover {
+  opacity: 0.8;
+}
+.wrap {
+  word-wrap: break-word;
+}
+
+@keyframes animate-pop {
+  0% {
+    opacity: "0";
+    transform: scale(0.5, 0.5);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+.lite {
+  background-color: #222;
+  color: #f9f9f9;
+}
+.dark{
+  background-color: #EEE;
+  color: #222;
+}
+.mybtn {
+  background-color: #444;
+  border: 1px solid #252525;
+}
+.margin{
+  margin-top: 6px;
+}
+body{
+  transition: all 0.5s linear;
+}
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+.hover:hover{
+  opacity: 0.8;
+}
+@media (max-width: 420px) {
+  .small {
+    font-size: small;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .container{
+    width: 90%;
+  }
+  *{
+    font-size: small;
+  }
+  .small{
+    font-size:xx-small;
+  }
+  .fa{
+    font-size: medium;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .container{
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container{
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container{
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  .container{
+    width: 50%;
+  }
+}

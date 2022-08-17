@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`filterbuttons test suite matches snapshot buttons 1`] = `
+Array [
+  <button
+    className="btn btn-secondary rounded p-2 btn-sm mx-2 my-3 w-25 small mybtn"
+    data-testid="filterbuttons"
+    onClick={[Function]}
+    type="button"
+  >
+    All
+  </button>,
+  <button
+    className="btn btn-secondary rounded p-2 btn-sm mx-2 my-3 w-25 small mybtn"
+    data-testid="filterbuttons"
+    onClick={[Function]}
+    type="button"
+  >
+    Active
+  </button>,
+  <button
+    className="btn btn-secondary rounded p-2 btn-sm mx-2 my-3 w-25 small mybtn"
+    data-testid="filterbuttons"
+    onClick={[Function]}
+    type="button"
+  >
+    Completed
+  </button>,
+  <button
+    className="btn btn-secondary rounded p-2 btn-sm mx-2 my-3 w-25 small mybtn"
+    data-testid="filterbuttons"
+    onClick={[Function]}
+    type="button"
+  >
+    Deleted
+  </button>,
+]
+`;

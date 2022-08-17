@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`todo test suite matches snapshot todos 1`] = `
+<div
+  className="d-flex c-cb my-3 ms-3 text-wrap"
+  data-testid="todo"
+>
+  <input
+    id="item-undefined"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <label
+    className="text-break me-3 todo-label w-100"
+    htmlFor="item-undefined"
+  />
+  <div
+    className="d-flex justify-content-end align-items-center"
+  >
+    <i
+      className="fa fa-edit mx-2 cursor black"
+      onClick={[Function]}
+      title="Edit Note"
+    />
+    <i
+      className="fa fa-trash-alt mx-1 cursor red"
+      onClick={[Function]}
+      title="Delete Note"
+    />
+  </div>
+</div>
+`;

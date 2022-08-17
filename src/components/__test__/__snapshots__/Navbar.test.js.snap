@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`navbar test suite matches snapshot navbar 1`] = `
+<nav
+  className="navbar navbar-dark navbar-expand-lg bg-dark navbar-fixed"
+>
+  <div
+    className="container-fluid"
+  >
+    <a
+      className="navbar-brand fs-4"
+      href="/"
+    >
+      Todolist
+    </a>
+    <button
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+      className="navbar-toggler"
+      data-bs-target="#navbarSupportedContent"
+      data-bs-toggle="collapse"
+      type="button"
+    >
+      <span
+        className="navbar-toggler-icon"
+      />
+    </button>
+    <div
+      className="collapse navbar-collapse"
+      id="navbarSupportedContent"
+    >
+      <ul
+        className="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-end"
+      />
+      <div
+        className="cursor hover"
+        onClick={[Function]}
+        title="Change Theme"
+      >
+        <label
+          className="text-light me-1 cursor margin"
+          htmlFor="theme"
+        >
+          Light 
+           Mode
+        </label>
+        <i
+          className="fa-solid fa-sun text-light fs-5 me-3"
+          id="theme"
+        />
+      </div>
+      <span
+        className="text-light fs-6 me-2"
+      >
+        Stay organized & focused.
+      </span>
+    </div>
+  </div>
+</nav>
+`;
