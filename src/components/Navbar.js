@@ -45,6 +45,7 @@ function Navbar() {
             onClick={toggleMode}
             className='cursor hover'
             title='Change Theme'
+            data-testid='changeTheme'
           >
             <label
               htmlFor='theme'

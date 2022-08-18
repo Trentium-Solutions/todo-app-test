@@ -66,6 +66,7 @@ function Modal({
                 backgroundColor: mode === 'light' ? '#fff' : '#999',
               }}
               onClick={handleAddClose}
+              data-testid='addTodoCloseX'
             ></button>
           </div>
           <div className='modal-body' style={{border: 'none'}}>
@@ -74,6 +75,7 @@ function Modal({
               className='w-100 p-4 my-1 font'
               id='newTodoTask'
               autoComplete='off'
+              data-testid='addTodoTextbox'
               style={{
                 color: mode === 'light' ? '#f9f9f9' : '#121212',
                 backgroundColor: mode === 'light' ? '#363636' : '#f9f9f9',
@@ -101,6 +103,7 @@ function Modal({
               type='button'
               className='btn btn-success w-25'
               onClick={(e) => handleSub(e)}
+              data-testid='addTodoSave'
             >
               Add
             </button>
@@ -149,12 +152,14 @@ function Modal({
               className='btn-close'
               style={{backgroundColor: mode === 'light' ? '#fff' : '#999'}}
               onClick={() => setShow(false)}
+              data-testid='editTodoCloseX'
             ></button>
           </div>
           <div className='modal-body'>
             <textarea
               id={id}
               className='todo-text w-100 p-4 my-1 font'
+              data-testid='editTodoTextbox'
               type='text'
               style={{
                 color: mode === 'light' ? '#f9f9f9' : '#121212',
@@ -176,6 +181,7 @@ function Modal({
               onClick={() => setShow(false)}
               className='btn btn-primary w-25'
               data-bs-dismiss='modal'
+              name='editTodoClose'
             >
               Close
             </button>
@@ -183,6 +189,7 @@ function Modal({
               type='button'
               className='btn btn-success w-25'
               onClick={handleSubmit}
+              data-testid='editTodoSave'
               disabled={newName.length === 0}
             >
               Save

@@ -144,6 +144,7 @@ function Main(props) {
                 <i
                   className='fa-solid fa-circle-plus cursor fs-1 green'
                   onClick={handleAdd} //It calls handleAdd method
+                  data-testid='addButton'
                   title='Add Tasks'
                 ></i>
               </div>

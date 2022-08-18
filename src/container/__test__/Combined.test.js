@@ -1,5 +1,4 @@
 import {createRoot} from 'react-dom/client'
-import TestRenderer from 'react-test-renderer'
 import {render, screen} from '@testing-library/react'
 import {Provider} from 'react-redux'
 import {PersistGate} from 'redux-persist/integration/react'
@@ -26,10 +25,5 @@ describe('combined test suite', () => {
   it('renders combined correctly', () => {
     render(combinedComponent)
     expect(screen.getByTestId('combined')).toBeTruthy()
-  })
-
-  it('matches snapshot combined', () => {
-    const tree = TestRenderer.create(combinedComponent).toJSON()
-    expect(tree).toMatchSnapshot()
   })
 })
